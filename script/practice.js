@@ -1,6 +1,6 @@
 // // console.log('js linked');
 
-// //* ------------------------------------------------ traditional way ------ 01 ------
+// //* ------------------------------❌❌-------------------- traditional way ------ 01 ------
 
 // //------ get id function---এই ফাংশন সমস্ত id এর জন্য ব্যবহার করবে।
 // function getId(id) {
@@ -148,27 +148,11 @@ getId('product-box').addEventListener('click', function (e) {
   }
 });
 
-// --------------------❌❌❌
+// //*-----------------------------❌❌------------------------ clear button---
 
-//     // প্রথমে  card-add কে ধরো
-//     const cardAdd = getId('card-add');
-
-//     //  card-add ডিভ এর মধ্যে, js দ্বারা নতুন div বানাও
-//     const newCard = document.createElement('div');
-//     newCard.innerHTML = `
-//         <div class="flex justify-between items-center bg-gray-100 p-4 rounded-lg mb-5">
-//             <img src="${productImg} " alt="" class="w-12">
-//             <div class="">
-//                 <h5 class="font-bold">${productTitle} </h5>
-//                 <p>${productPrice} </p>
-//             </div>
-//         </div>
-//     `;
-//     cardAdd.appendChild(newCard);
-
-//     // Quantity যুক্ত করতে
-//     let quantity = parseFloat(getId('total-quantity').innerText);
-//     quantity = quantity + 1;
-//     getId('total-quantity').innerText = quantity;
-//   });
-// }
+document.getElementById('clear-btn').addEventListener('click', function () {
+  const cardAdd = getId('card-add');
+  cardAdd.innerHTML = '';
+  getId('total-price').innerText = 0;
+  getId('total-quantity').innerText = 0;
+});
