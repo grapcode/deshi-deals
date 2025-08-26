@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshi Deals</title>
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- DaisyUI & Tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f8f8f8]">
+    <header>
+        <!-- navbar  -->
+        <nav class="flex justify-center items-center border-b-2 border-gray-300 py-3">
+            <img src="./assets/logo.png" alt="" class="w-18 mr-3">
+            <div>
+                <h3 class="text-5xl text-pink-500">Deshi <span class="font-bold">Deals</span></h3>
+                <p class="text-lg">Cheap Price , Best Quality</p>
+            </div>
+        </nav>
+        <!-- banner section  -->
+        <div class="banner grid text-center place-items-center bg-gradient-to-t from-pink-100">
+            <h1 class="lg:text-6xl md:text-5xl font-bold my-6">Purchase TK 200 or above & get <br> <span
+                    class="text-pink-500">20%
+                    off</span></h1>
+            <div class="flex gap-x-20">
+                <p>Use Promo Code</p>
+                <button class="btn bg-pink-500 text-white px-16">SELL200</button>
+            </div>
+            <img src="./assets/hero-bg.png" alt="" class="w-7/12">
+        </div>
+    </header>
+    <main class="my-12 w-11/12 mx-auto ">
+        <!-- kitchenware section  -->
+        <section class="grid grid-cols-12 gap-12">
+            <!-- card all  -->
+            <section id="product-box" class=" col-span-9">
+                <!-- card parent  -->
+                <h3 class="text-2xl font-bold my-10">Kitchenware</h3>
+                <div class="grid grid-cols-3 gap-10">
+                    <!-- kitchen card  1 -->
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="px-10 py-10 bg-gray-100 m-5 ">
+                            <img id="card-img-1" src="./assets/kitchen-1.png" alt="Shoes" class="rounded-xl " />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="star text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h2 id="card-title-1" class="card-title">K. Accessories</h2>
+                            <p><span id="card-price-1">40.30</span> TK</p>
+
+                            <button id="k-btn-1" class="k-button btn btn-secondary w-full">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- kitchen card  2 -->
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="px-10 py-10 bg-gray-100 m-5 ">
+                            <img src="./assets/kitchen-2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="star text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h2 class="card-title">Hari Pathil</h2>
+                            <p>25.00 TK</p>
+
+                            <button id="k-btn-2" class="k-button btn btn-secondary w-full">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- kitchen card  3 -->
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="px-10 py-10 bg-gray-100 m-5 ">
+                            <img src="./assets/kitchen-3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="star text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h2 class="card-title">Home Cooker</h2>
+                            <p>30.00 TK</p>
+
+                            <button id="k-btn-3" class="k-button btn btn-secondary w-full">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="col-span-3 mt-28">
+                <div class="bg-white p-5 mb-5 w-full">
+                    <h5 class="mb-4 text-lg font-semibold">Have Coupon?</h5>
+                    <div class="join">
+                        <div>
+                            <label class="input validator join-item ">
+                                <input type="text" placeholder="Coupon code" required />
+                            </label>
+                            <div class="validator-hint hidden">Enter valid email address</div>
+                        </div>
+                        <button class="btn join-item  bg-pink-500 text-white rounded-r-lg ">Apply</button>
+                    </div>
+                </div>
+                <div class="bg-white p-6">
+                    <div id="card-add">
+                        <!-- এটা js ফাইলে যুক্ত করবে -->
+                        <!-- <div class="flex justify-between items-center bg-gray-100 p-4 rounded-lg mb-5">
+                            <img src="./assets/kitchen-1.png" alt="" class="w-12">
+                            <div class="">
+                                <h5 class="font-bold">K. Accessories</h5>
+                                <p>39.00 TK</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <p class="">Total price: <span id="total-price">0</span>TK</p>
+                    <p class="">Discount : <span id="total-discount">0</span>TK</p>
+                    <p class="">Total Quantity: <span id="total-quantity">0</span></p>
+                    <div class="border-1 border-gray-100 my-5"></div>
+                    <button class="btn join-item  bg-pink-500 text-white rounded-lg w-full">Make
+                        Purchase</button>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- java script link  -->
+    <script src="./script/practice.js"></script>
+</body>
+
+</html>
